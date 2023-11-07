@@ -4,8 +4,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.toVersion(System.getProperty('java.version'))
+    targetCompatibility = JavaVersion.toVersion(System.getProperty('java.version'))
 }
 
 repositories {
