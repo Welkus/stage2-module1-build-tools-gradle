@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Utils {
     public static boolean isAllPositiveNumbers(List<String> args) {
-        //magic happens here
+
+        return args.stream().map(Integer::parseInt).allMatch(n -> n > 0);
     }
 }
